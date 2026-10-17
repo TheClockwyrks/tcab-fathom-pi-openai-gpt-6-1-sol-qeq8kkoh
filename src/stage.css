@@ -1,0 +1,7 @@
+/* Keep the page's viewport-sized surface responsive even if the runtime pins
+   an intrinsic-size canvas with inline pixel dimensions. This sets CSS layout
+   only: the engine still owns the backing store, fit, DPR, and letterboxing. */
+#stage {
+  width: 100vw !important;
+  height: 100vh !important;
+}
